@@ -1,18 +1,11 @@
 /* Estilos generales */
 * {
+    margin: 0;
+        padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    background-color: #E1E1E2;
-}
-
-/* Contenedor principal para dar margen general a la página, esto solo por gusto personal ;)*/
-.container {
-    background-color: white;
-    width: 95%;
-    margin: auto; 
-    margin-top: 3%; 
+    font-family: 'Be Vietnam Pro', sans-serif;    
 }
 
 /* estilos del header:
@@ -55,6 +48,13 @@ header {
     text-decoration: none;   
 }
 
+.nav-pos a:hover {
+    color: #8B48BF;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+
 /* 6. Estilizar botón */
 .btn {
     background-color: #8B48BF;
@@ -72,32 +72,36 @@ header {
 #btn-shadow {
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
+.btn:hover {
+    opacity: 70%; 
+}
 
 /* Estilos del main: 
    1. Posicionar elementos*/
 main {
     display: flex;
     justify-content: center;
-    margin: 6% 8% 6% 11%;
+    margin: 6% 10%;
 }
 /* 2. Ajustar posición bloque izquerdo */
 .wrapper {
-    margin-top: 50px;
+    margin-top: 9%;
     padding-bottom: 35px;
 
 } 
 /* 3. Estilizar título */
 .wrapper h1 {
-    font-weight: 700;
+    width: 80%;
+    font-weight: 600;
     font-size: 58px;
-    line-height: 66px;
+    line-height: 68px;
     color: #232C50;
-    margin-bottom: 5px;
+    margin-bottom: 3%;
     letter-spacing: -0.035em
 }
 /* 4. Estilizar párrafo */
 .wrapper p {
-    width: 70%;
+    width: 56%;
     font-weight: 500;
     font-size: 16.5584px;
     line-height: 157.1%;
@@ -106,12 +110,8 @@ main {
     
 }
 
-
 /* 6. Ajustar imágen */
-.diagrams {
-    width: 580px;
-    height: 525px;
-    margin-right: 2%;
+.diagrams {   
     padding-top: 3%;
 }
 
@@ -129,6 +129,7 @@ main {
     font-size: 36px;
     line-height: 114.6%;
     color: #232851;
+    padding: 6% 0 10%;
 }
 /* 3. Estilizar párrafo */
 .left-container p {
@@ -153,6 +154,7 @@ main {
     align-items: center;
     letter-spacing: -0.015em;
     color: #323851;
+    padding-bottom: 3%;
         
 }
 .add-button h3 {
@@ -175,9 +177,9 @@ main {
     font-size: 16px;
     line-height: 23px;
     text-align: center;
-    margin-right: 20px;
-   
+    margin-right: 20px;   
 }
+
 /* 4. Agregar contenido de botones */
 .number1::before{
     content: "01";
@@ -193,7 +195,7 @@ main {
 
 /* 5. Estilizar párrafo */
 .right-container p {
-    width: 95%;
+    width: 92%;
     font-weight: 500;
     font-size: 16.2984px;
     line-height: 26px;
@@ -201,7 +203,7 @@ main {
     align-items: center;
     letter-spacing: -0.01em;
     color: #B3B2B7;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
     
 }
 /* Estilos segunda sección */
@@ -217,14 +219,13 @@ main {
     font-weight: 700;
     font-size: 39.2143px;
     line-height: 156.6%;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
 }
 .cards {
     display: flex;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around;    
 }
+
 article {
     text-align: center;
     background-color: #FAFAFA;
@@ -262,11 +263,17 @@ article p {
     top: -30px;
 
 }
+/* Botón con transparencia */
 #btn-opacity {
     opacity: 0.7;
     cursor: pointer;
     margin-top: 5%;
 }
+
+#btn-opacity:hover {
+    opacity: 100%;
+}
+
 
 aside {
     display: flex;
@@ -276,8 +283,9 @@ aside {
     width: 100%;
     height: 224px;
 }
+
 aside h2 {
-    width: 40%;
+    width: 36%;
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
@@ -290,6 +298,7 @@ aside h2 {
     color: #8B48BF;
 
 }
+
 /* Estilos del footer */
 footer {
     background: #1E1E26;
@@ -364,3 +373,5 @@ footer {
     line-height: 18px;
     margin-top: 30%;
 } 
+
+
