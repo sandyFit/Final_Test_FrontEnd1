@@ -44,18 +44,17 @@ header {
     
 }
 
-/* 5. Ajustar color y quitar viñetas del texto del nav */
+/* 5. Ajustar color y quitar viñetas del texto del menú de navegación */
 .nav-pos a {
     color: #242E52;
     text-decoration: none;   
 }
-
+/* Añadir seudoclase :hover al menú de navegación */
 .nav-pos a:hover {
     color: #8B48BF;
     text-decoration: underline;
     font-size: 14px;
 }
-
 
 /* 6. Estilizar botón */
 .btn {
@@ -77,6 +76,7 @@ header {
 .btn:hover {
     opacity: 70%; 
 }
+/* 8. Ocultar menú desplegable de la versión móvil */
 .fa-bars {
     display: none;
 }
@@ -111,11 +111,10 @@ main {
     font-size: 1.035rem;
     line-height: 157.1%;
     color: #000000;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;    
 }
 
-/* 6. Ajustar imágen */
+/* 5. Ajustar imágen */
 .diagrams {   
     padding-top: 3%;
 }
@@ -147,71 +146,63 @@ main {
 /* Ajustes contenedor derecho 
    1. Ajustar margen izq*/
 .right-container {
-    margin: 2% 0 0 15%;
+    margin: 2% 0 0 15%;    
 }
 
 /* 2. Estilizar título */
-.right-container h3 {
+.add-h3 {
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.438rem;
-    display: flex;
-    align-items: center;
     letter-spacing: -0.015em;
     color: #323851;
-    padding-bottom: 3%;
-        
-}
-.add-button h3 {
+    padding-bottom: 5%;
+    margin-top: 5%; 
     padding-top: 2%;
 }
-.add-button p {
-    padding-left: 17%;
+
+/* 5. Estilizar párrafo */
+.add-p {
+    padding: 0 0 5% 17% ;
+    width: 93%;
+    font-weight: 500;
+    font-size: 1.019rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.01em;
+    color: #B3B2B7;   
 }
 
-/* 3. Agregar botón */
-.add-button::before{ 
+/* 3. Agregar bullet-points con seudoelemento ::before */
+.add-bullet::before {
     color: #FFFFFF;
     width: 25px;
     height: 22px;
     background: #8B48BF;
     border-radius: 30px;
-    padding: 10px 25px;
+    padding: 11px 25px;
     float: left;
     font-weight: 700;
     font-size: 16px;
     line-height: 23px;
     text-align: center;
-    margin-right: 20px;   
+    margin-right: 20px;
 }
 
-/* 4. Agregar contenido de botones */
-.number1::before{
+/* 4. Agregar contenido de los bullet-points */
+.number1::before {
     content: "01";
 }
 
-.number2::before{
+.number2::before {
     content: "02";
 }
 
-.number3::before{
+.number3::before {
     content: "03";
 }
 
-/* 5. Estilizar párrafo */
-.right-container p {
-    width: 92%;
-    font-weight: 500;
-    font-size: 1.019rem;
-    line-height: 1.625rem;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.01em;
-    color: #B3B2B7;
-    padding-bottom: 5%;
-    
-}
 /* Estilos segunda sección */
+/* Posicionar elementos */
 .second-section {
     display: flex;
     flex-direction: column;
@@ -219,13 +210,16 @@ main {
     align-items: center;
     margin: 0 5% 12%;
 }
-/* Título */
+
+/* Ajustar Título */
 .second-section h2 {
     font-weight: 700;
     font-size: 2.451rem;
     line-height: 1.595rem;
     padding-bottom: 8%;
 }
+
+/* Aplicar flex a las tarjetas */
 .cards {
     display: flex;
     justify-content: space-around;    
@@ -236,6 +230,7 @@ article {
     background-color: #FAFAFA;
     Width: 445px; 
     Height: 219px;
+    margin: 0;
 }
 
 article h3 {
@@ -263,23 +258,26 @@ article p {
     width: 88%;
     margin: 0 2% 5% 5%;
 }
+
+/* Ubicar el avatar */
 .avatar {
     position: relative;
     top: -30px;
-
 }
-/* Botón con transparencia */
+
+/* Ajustar transparencia al botón */
 #btn-opacity {
     opacity: 0.7;
     cursor: pointer;
     margin-top: 5%;
 }
 
+/* Efecto hover */
 #btn-opacity:hover {
     opacity: 100%;
 }
 
-
+/* Estilos de la sección adicional <aside> */
 aside {
     display: flex;
     justify-content: space-around;
@@ -289,6 +287,7 @@ aside {
     height: 224px;
 }
 
+/* Estilizar título */
 aside h2 {
     width: 36%;
     font-weight: 700;
@@ -297,14 +296,16 @@ aside h2 {
     letter-spacing: -0.005em;
     color: #FFFFFF;
 }
+
+/* Cambiar color al botón */
 #btn-reverse {
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     color: #8B48BF;
-
 }
 
 /* Estilos del footer */
+/* Generales */
 footer {
     background: #1E1E26;
     width: 100vw;
@@ -315,6 +316,8 @@ footer {
     padding: 0 12%;
     margin: 0;
 }
+
+/* Posicionar elementos del contenedor izquierdo*/
 .footer-container1 {
     display: flex;
     flex-direction: column;
@@ -322,14 +325,25 @@ footer {
     justify-content: center;   
     
 }
+
+/* Ajustar ubicación de los íconos */
 .icons-container {
     margin-top: 40%;    
 }
+
+/* Estilizar íconos */
 .fa-brands {
     color: #FFFFFF;
     font-size: 1.25rem;
-    padding: 0 5px;
-    
+    padding: 0 5px;    
+}
+
+/* Ajustar estilos del menú secundario */
+.group-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5%;
+    width: 35%;
 }
 
 .feature {
@@ -345,15 +359,17 @@ footer {
     color: #FFFFFF;
     font-weight: 300;
     font-size: 1rem;
-    line-height: 1.438rem;
-    
+    line-height: 1.438rem;    
 }
+
+/* Ajustar contenedor derecho */
 .footer-container2 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
 }
+
+/* Estilizar formulario */
 .update {
     background: #FFFFFF;
     border-radius: 50px;
@@ -364,14 +380,17 @@ footer {
     font-size: 0.824rem;
     line-height: 1.188rem;
     padding-left: 10px;
-    margin-top: 7%;
-    
-}  
+    margin-top: 7%;    
+} 
+
+/* Ajustar medidas del botón submit */
 .small-btn {
     width: 63px;
     height: 42px;
-} 
-.footer-container2 p {
+}
+
+/* Estilizar el copyright */
+.copyright {
     color: #8C8C94;
     font-weight: 500;
     font-size: 0.781rem;
@@ -379,110 +398,198 @@ footer {
     margin-top: 30%;
 } 
 
-/* Versión móviles */
+
+/* Versión móviles 480 */
 @media screen and (max-width: 480px) {
+
     /* Estilos del header */
+    header {
+        padding-top: 12%;
+        display: flex;
+        justify-content: space-around;
+    }
+
     .black-logo {
-        width: 50%;
-        height: 25%;
-        position: relative;
-        left: 8%;
-        padding-top: 15%;
-    }
-    .header-navbar {
+        width: 130px;
+        height: 20px;
+        margin-left: -15%;
+    } 
+
+    .header-navbar, #btn-shadow {
         display: none;
     }
-    header .btn {
-        display: none;
-    }
+
+
     .fa-bars {
+        font-size: 2.5rem;
         display: block;
         position: relative;
-        left: 60%;
-        font-size: 4rem;
-        padding-top: 12%;
-
+        margin-right: -10%;
+        
     }
+
     /* Estilos del main */
     main {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        padding-top: 15%;    
-        
-    }
-    .diagrams {
-        position: relative;
-        left: 38%;
-    }
-    .wrapper {
-        text-align: center;    
-        
+        padding-top: 6%;
     }
 
+    .diagrams {
+        width: 98%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20% 6.5px 0 0;
+    }
     .wrapper h1 {
-        width: 170%;
-        font-size: 4.8rem;
-        line-height: 5.6rem;
-        padding-right: 15%;
-        position: relative;
-        left: 12%;
-        margin-top: 32%;
+        width: 130%;
+        font-size: 3rem;
+        line-height: 3.5rem;
     }
     .wrapper p {
-        width: 130%;
-        position: relative;
-        left: 22%;
-        font-size: 1.35rem;
-        margin-top: 10%;
+        width: 100%;
+        font-size: 1rem;
+       
     }
-    .wrapper button {
-        position: relative;
-        left: 35%;
-        margin-top: 6%;
-    }
+
     /* Primera sección */
     .first-section {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-top: 20%;
+        align-items: center; 
+        margin-top: 15%;
     }
+
     .left-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
         text-align: center;
-        position: relative;
-        left: 15%;
     }
+
     .first-section h2 {
-        width: 160%;
-        font-size: 3.2rem;
-        padding-right: 13%;
+        width: 110%;
+        font-size: 2rem;
     }
+
     .first-section p {
-        width: 140%;
-        font-size: 1.3rem;
-        margin-top: 3%;
+        width: 100%;
+        font-size: 0.98rem;
+    
     }
+
     .right-container {
-        margin-top: 40%;
+        margin-top: 20%;
+        position: relative;
+        right: 15%;
     }
-    .purple-background {
+
+    .add-h3 {
         background: rgba(139, 72, 191, 0.3);
         border-radius: 50px 0px 0px 50px;
-        width: 190%;
-        font-size: ;
+        width: 150%;
+        padding-left: 25%;
+
     }
-    .cards article {
-        /* width: 160vw;
-            height: 30vh; */
+
+    .add-p {
+        width: 140%;
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        margin: 8% 0 4% -16%;
     }
-    article p {
-        font-size: ;
+    
+    .second-section {
+        margin-top: 20%;
+    }
+    
+    article {
+        margin: 0 8px;
+    }
+    .cards {
+        margin-top: 15%;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 484px;
+        height: 318px;
+        margin-top: 20%;
     }
 
 
+    aside h2 {
+        width: 324px;
+        height: 144px;
+        font-size: 2.2em;
+    }
+    /* Estilos del footer */
+    footer {
+        width: 480px;
+        height: 535.89px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .footer-container1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    .update {
+        width: 270px;
+        height: 44px;
+        position: relative;
+        top: -35%;
+    }
+
+    .small-btn {
+        position: relative;
+        top: -35%;
+    }
+
+    .group-list {
+        width: 90%;
+        position: relative;
+        top: 3%;
+    }
+
+    .icons-container {
+        position: relative;
+        bottom: 50%;
+        left: 10%;
+        width: 120%;
+    }
+
+    .footer-container1 img {
+        position: relative;
+        bottom: 28%;
+    }
+
+    .copyright {
+        position: absolute;
+        bottom: 10%;
+        left: 26%
+    }
+
+    .fa-brands {
+        letter-spacing: 3.2rem;
+    }
 
 }
-
 
