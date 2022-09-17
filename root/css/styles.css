@@ -1,4 +1,7 @@
-/* Estilos generales */
+
+/* ================ Versión desktop 1536 ================
+
+Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +9,7 @@
 }
 body {
     font-family: 'Be Vietnam Pro', sans-serif;    
-    width: 100vw;
-    
+    width: 100vw;    
 }
 
 /* estilos del header:
@@ -16,8 +18,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center; 
-    margin: 0 5%;
-    padding-top: 5.5%;
+    margin: 0 8%;
+    padding-top: 8%;
 }
 
 
@@ -40,8 +42,7 @@ header {
     font-weight: 500;
     line-height: 19px;
     list-style: none;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 
 /* 5. Ajustar color y quitar viñetas del texto del menú de navegación */
@@ -86,14 +87,14 @@ header {
 main {
     display: flex;
     justify-content: center;
-    margin: 6% 10%;
+    margin: 6% 13%;
 }
 /* 2. Ajustar posición bloque izquerdo */
 .wrapper {
     margin-top: 9%;
     padding-bottom: 35px;
-
 } 
+
 /* 3. Estilizar título */
 .wrapper h1 {
     width: 80%;
@@ -104,6 +105,7 @@ main {
     margin-bottom: 3%;
     letter-spacing: -0.035em
 }
+
 /* 4. Estilizar párrafo */
 .wrapper p {
     width: 56%;
@@ -124,7 +126,7 @@ main {
 .first-section {
     display: flex;
     justify-content: center;
-    margin: 6% 8% 6% 11%;
+    margin: 6% 10% 6% 14%;
 }
 
 /* 2. Estilizar título */
@@ -135,6 +137,7 @@ main {
     color: #232851;
     padding: 6% 0 10%;
 }
+
 /* 3. Estilizar párrafo */
 .left-container p {
     width: 80%;
@@ -143,6 +146,7 @@ main {
     line-height: 151.1%;
     color: #000000;
 }
+
 /* Ajustes contenedor derecho 
    1. Ajustar margen izq*/
 .right-container {
@@ -208,10 +212,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 5% 12%;
-}
+    margin-top: 8%;
+} 
 
-/* Ajustar Título */
+/* Ajustar Título de la sección*/
 .second-section h2 {
     font-weight: 700;
     font-size: 2.451rem;
@@ -225,6 +229,7 @@ main {
     justify-content: space-around;    
 }
 
+/* Estilizar tarjetas */
 article {
     text-align: center;
     background-color: #FAFAFA;
@@ -233,6 +238,7 @@ article {
     margin: 0;
 }
 
+/* Títulos de las tarjetas */
 article h3 {
     font-weight: 700;
     font-size: 1.004rem;
@@ -249,14 +255,6 @@ article p {
     line-height: 1.566rem;
     color: #B9B9C1;
     
-}
-.size1 {
-    margin: 1% 3% 0 4%;
-}
-
-.size2 {
-    width: 88%;
-    margin: 0 2% 5% 5%;
 }
 
 /* Ubicar el avatar */
@@ -285,6 +283,7 @@ aside {
     background-color: #8B48BF;
     width: 100%;
     height: 224px;
+    margin-top: 10%;
 }
 
 /* Estilizar título */
@@ -295,6 +294,7 @@ aside h2 {
     line-height: 3rem;
     letter-spacing: -0.005em;
     color: #FFFFFF;
+    margin-left: -2%;
 }
 
 /* Cambiar color al botón */
@@ -314,7 +314,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 12%;
-    margin: 0;
+    margin:0;
 }
 
 /* Posicionar elementos del contenedor izquierdo*/
@@ -367,6 +367,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+       
 }
 
 /* Estilizar formulario */
@@ -380,7 +381,8 @@ footer {
     font-size: 0.824rem;
     line-height: 1.188rem;
     padding-left: 10px;
-    margin-top: 7%;    
+    margin-top: 7%;  
+   
 } 
 
 /* Ajustar medidas del botón submit */
@@ -395,11 +397,11 @@ footer {
     font-weight: 500;
     font-size: 0.781rem;
     line-height: 1.125rem;
-    margin-top: 30%;
+    margin-top: 30% ;
 } 
 
+/* =============== Versión móviles 480px =============== */
 
-/* Versión móviles 480 */
 @media screen and (max-width: 480px) {
 
     /* Estilos del header */
@@ -419,7 +421,7 @@ footer {
         display: none;
     }
 
-
+    /* Menú desplegable */
     .fa-bars {
         font-size: 2.5rem;
         display: block;
@@ -430,7 +432,6 @@ footer {
 
     /* Estilos del main */
     main {
-        display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
@@ -461,7 +462,6 @@ footer {
 
     /* Primera sección */
     .first-section {
-        display: flex;
         flex-direction: column;
         align-items: center; 
         margin-top: 15%;
@@ -496,7 +496,11 @@ footer {
         border-radius: 50px 0px 0px 50px;
         width: 150%;
         padding-left: 25%;
+       
 
+    }
+    .add-bullet {
+        margin-left: -8%;
     }
 
     .add-p {
@@ -518,7 +522,6 @@ footer {
     }
 
     aside {
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -534,6 +537,7 @@ footer {
         height: 144px;
         font-size: 2.2em;
     }
+
     /* Estilos del footer */
     footer {
         width: 480px;
@@ -546,7 +550,6 @@ footer {
     }
 
     .footer-container1 {
-        display: flex;
         flex-direction: column-reverse;
         align-items: center;
         
